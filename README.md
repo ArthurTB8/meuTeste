@@ -10,7 +10,7 @@ Este projeto é um serviço de back-end para gerenciar leituras individualizadas
 O serviço é construído usando Node.js com TypeScript e utiliza a API Gemini para processamento de imagens. Ele oferece uma API REST para upload de imagens de medidores e armazena as leituras em um banco de dados MongoDB.
 
 
-![image](https://github.com/user-attachments/assets/8f9167d3-aa68-4164-804f-c7ddbddc4420)
+![image](https://github.com/user-attachments/assets/d2916866-f51d-4a86-b3f0-909e6102699c)
 
 
 
