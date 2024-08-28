@@ -10,35 +10,8 @@ Este projeto é um serviço de back-end para gerenciar leituras individualizadas
 O serviço é construído usando Node.js com TypeScript e utiliza a API Gemini para processamento de imagens. Ele oferece uma API REST para upload de imagens de medidores e armazena as leituras em um banco de dados MongoDB.
 
 
-### Estrutura do Projeto
+![image](https://github.com/user-attachments/assets/8f9167d3-aa68-4164-804f-c7ddbddc4420)
 
-image-reading-service/
-│
-├── src/
-│ ├── controllers/
-│ │ └── measureController.ts
-│ ├── models/
-│ │ ├── measureModel.ts
-│ │ └── readingModel.ts
-│ ├── routes/
-│ │ ├── measureRoutes.ts
-│ │ └── mongooseRoute.ts
-│ ├── services/
-│ │ ├── geminiService.ts
-│ │ └── llmService.ts
-│ ├── utils/
-│ │ └── validationUtils.ts
-│ ├── tests/
-│ │ ├── measure.test.ts
-│ │ ├── measureController.test.ts
-│ │ └── serviceTest.ts
-│ └── index.ts
-│
-├── dist/ # Arquivos compilados
-├── .env # Variáveis de ambiente
-├── Dockerfile
-├── docker-compose.yml
-└── package.json
 
 
 ## Funcionalidades
@@ -136,6 +109,5 @@ Erros internos ou de processamento resultam em respostas 500 (Internal Server Er
 Banco de Dados:
 O MongoDB armazena as medições, permitindo consultas futuras e verificações de duplicidade.
 Este fluxo garante que cada upload de imagem seja validado, processado pela IA para extrair a leitura, verificado quanto à duplicidade, e armazenado de forma segura, fornecendo uma resposta consistente ao cliente. O uso de Docker facilita a implantação e garante um ambiente consistente para a aplicação e o banco de dados
-
 
 
